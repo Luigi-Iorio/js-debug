@@ -149,7 +149,6 @@ sostituire:
 - i < numbers.length - 1 con i < numbers.length
 - if (numbers % 2 = 0); con if (numbers[i] % 2 === 0)
 - evenNumbers.push(i); con evenNumbers.push(numbers[i]);
-- return con il console log dopo il ciclo
 */
 
 // Soluzione - esercizio 4
