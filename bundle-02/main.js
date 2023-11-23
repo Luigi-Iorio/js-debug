@@ -103,6 +103,35 @@ printColorsNumber();
 // }
 // addNumbers();
 
+/*
+Risposta 1
+
+Questa funzione dopo aver richiesto un numero tramite pompt
+dovrebbe restituire la somma tra il numero inserito e 12 
+*/
+
+/*
+Risposta 2
+
+Si, per sistemare l'errore bisogna convertire il risultato
+del prompt da una stringa ad un numero
+*/
+
+/*
+Risposta 3
+
+Non sono presenti errori di tipo logico
+*/
+
+// Soluzione - esercizio 3
+function addNumbers() {
+  const userNumber = parseInt(prompt("Inserisci un numero"));
+  const total = userNumber + 12;
+
+  console.log(`Il risultato finale è ${total}`);
+}
+addNumbers();
+
 // ESERCIZIO 4
 // function checkAccess() {
 //     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
