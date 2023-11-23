@@ -66,6 +66,34 @@ checkAge();
 // }
 // printColorsNumber();
 
+/*
+Risposta 1
+
+Questa funzione dovrebbe restituire il numero di colori
+presenti nell'array colors. Il messeggio con il numero di colori
+viene stampato in console.
+*/
+
+/*
+Risposta 2
+
+È presente un errore di sintassi (colors.length)
+per visualizzare il numero di colori sostituire l'errore con (colors.length)
+*/
+
+/*
+Risposta 3
+
+Non sono presenti errori di tipo logico
+*/
+
+// Soluzione - esercizio 2
+function printColorsNumber() {
+  const colors = ["blue", "red", "yellow", "green", "black"];
+  console.log(`Nella mia palette ci sono ${colors.length} colori!`);
+}
+printColorsNumber();
+
 // ESERCIZIO 3
 // function addNumbers() {
 //     const userNumber = prompt('Inserisci un numero');
