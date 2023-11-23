@@ -130,7 +130,7 @@ function addNumbers() {
 
   console.log(`Il risultato finale è ${total}`);
 }
-// addNumbers();
+addNumbers();
 
 // ESERCIZIO 4
 // function checkAccess() {
@@ -223,3 +223,60 @@ checkAccess();
 //         }
 //     }
 //     checkAccessImproved();
+
+/*
+Risposta 1
+
+Questa funzione dopo aver richiesto una mail tramite pompt
+dovrebbe verificare se è presente dentro l'array address
+se è presente l'accesso è consentito
+se non è presente l'accesso non è consentito
+Inoltre fa un altro controllo, se la mail inserita è maggiore di 5 caretteri.
+*/
+
+/*
+Risposta 2
+
+Si, gli errori di sintassi sono:
+- Apici sui valori booleani true e false
+- Spostare il log del messaggio fuori dal ciclo for
+  in questo modo il messaggio viene loggato una sola volta
+- (Bonus) spostare la condizione if (userEmail.length > 5) fuori dal ciclo
+  cosi il controllo avviene una sola volta
+*/
+
+/*
+Risposta 3
+
+Non sono presenti errori di tipo logico
+*/
+
+// Soluzione - esercizio 5
+function checkAccessImproved() {
+  const addresses = [
+    "mymail@mail.com",
+    "yourmail@mail.com",
+    "hermail@mail.com",
+    "hismail@mail.com",
+  ];
+
+  const userEmail = prompt("Inserisci il tuo indirizzo email");
+
+  let grantAccess = false;
+
+  for (let i = 0; i < addresses.length; i++) {
+    const email = addresses[i];
+
+    if (userEmail.length > 5) {
+      if (email === userEmail) {
+        grantAccess = true;
+      }
+    }
+  }
+  if (grantAccess === true) {
+    console.log("Accesso consentito!");
+  } else {
+    console.log("Accesso negato!");
+  }
+}
+checkAccessImproved();
