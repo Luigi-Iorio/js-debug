@@ -130,7 +130,7 @@ function addNumbers() {
 
   console.log(`Il risultato finale è ${total}`);
 }
-addNumbers();
+// addNumbers();
 
 // ESERCIZIO 4
 // function checkAccess() {
@@ -150,6 +150,51 @@ addNumbers();
 //     }
 // }
 // checkAccess();
+
+/*
+Risposta 1
+
+Questa funzione dopo aver richiesto una mail tramite pompt
+dovrebbe verificare se è presente dentro l'array address
+se è presente l'accesso è consentito
+se non è presente l'accesso non è consentito
+*/
+
+/*
+Risposta 2
+
+Si, le variabili di tipo boolean non hanno apici
+*/
+
+/*
+Risposta 3
+
+Non sono presenti errori di tipo logico
+*/
+
+// Soluzione - esercizio 4
+function checkAccess() {
+  const addresses = [
+    "mymail@mail.com",
+    "yourmail@mail.com",
+    "hermail@mail.com",
+    "hismail@mail.com",
+  ];
+  const userEmail = prompt("Inserisci il tuo indirizzo email");
+
+  let grantAccess = false;
+
+  if (addresses.includes(userEmail)) {
+    grantAccess = true;
+  }
+
+  if (grantAccess === true) {
+    console.log("Accesso consentito!");
+  } else {
+    console.log("Accesso negato!");
+  }
+}
+checkAccess();
 
 // ESERCIZIO 5 (suggerimento: c'è un solo errore)
 // function checkAccessImproved() {
