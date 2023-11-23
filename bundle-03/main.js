@@ -179,13 +179,14 @@ const otherCars = cars.filter((auto) => {
   );
 });
 
-console.log("Auto a benzina");
 console.log("*******************************");
+console.log("Auto a benzina");
 console.log(gasolineCars);
 
-console.log("Auto a diesel");
 console.log("*******************************");
+console.log("Auto a diesel");
 console.log(dieselCars);
 
+console.log("*******************************");
 console.log("Tutte le altre auto");
 console.log(otherCars);
