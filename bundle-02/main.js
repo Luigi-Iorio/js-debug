@@ -9,111 +9,115 @@
 ​
 *******************************************************************************/
 
-
 // ESERCIZIO 1
-function checkAge() {
-    const myAge = 32;
-    const message = '';
+// function checkAge() {
+//   const myAge = 32;
+//   const message = "";
 
-    if (myAge < 18) {
-        message = `Sei troppo giovane! Hai ${myAge} anni!`;
-    } else {
-        message = 'Hai più di 18 anni!';
-    }
+//   if (myAge < 18) {
+//     message = `Sei troppo giovane! Hai ${myAge} anni!`;
+//   } else {
+//     message = "Hai più di 18 anni!";
+//   }
+// }
+// checkAge();
+
+/*
+Risposta 1
+
+Questa funzione dovrebbe restituire 2 messaggi,
+se l'eta è minore di 18 (Sei troppo giovane! Hai 32 anni!)
+se l'eta è maggiore di 18 ("Hai più di 18 anni!")
+*/
+
+/*
+Risposta 2
+
+Sono presenti errori di sintassi, la variabile message deve avere let e non const
+perchè assume un valore in base al caso in cui si trova
+*/
+
+/*
+Risposta 3
+
+Per visualizzare in console il messaggio, mettere un console.log alla fine della funzione
+*/
+
+// Soluzione - esercizio 1
+function checkAge() {
+  const myAge = 32;
+  let message = "";
+
+  if (myAge < 18) {
+    message = `Sei troppo giovane! Hai ${myAge} anni!`;
+  } else {
+    message = "Hai più di 18 anni!";
+  }
+
+  console.log(message);
 }
+
 checkAge();
 
 // ESERCIZIO 2
-function printColorsNumber() {
-    const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-    console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
-}
-printColorsNumber();
-
+// function printColorsNumber() {
+//     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
+//     console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
+// }
+// printColorsNumber();
 
 // ESERCIZIO 3
-function addNumbers() {
-    const userNumber = prompt('Inserisci un numero');
-    const total = userNumber + 12;
+// function addNumbers() {
+//     const userNumber = prompt('Inserisci un numero');
+//     const total = userNumber + 12;
 
-    console.log(`Il risultato finale è ${total}`);
-}
-addNumbers();
-
+//     console.log(`Il risultato finale è ${total}`);
+// }
+// addNumbers();
 
 // ESERCIZIO 4
-function checkAccess() {
-    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
-    const userEmail = prompt('Inserisci il tuo indirizzo email');
+// function checkAccess() {
+//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+//     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-    let grantAccess = 'false';
+//     let grantAccess = 'false';
 
-    if (addresses.includes(userEmail)) {
-        grantAccess = 'true';
-    }
+//     if (addresses.includes(userEmail)) {
+//         grantAccess = 'true';
+//     }
 
-    if (grantAccess === true) {
-        console.log('Accesso consentito!');
-    } else {
-        console.log('Accesso negato!');
-    }
-}
-checkAccess();
-
+//     if (grantAccess === true) {
+//         console.log('Accesso consentito!');
+//     } else {
+//         console.log('Accesso negato!');
+//     }
+// }
+// checkAccess();
 
 // ESERCIZIO 5 (suggerimento: c'è un solo errore)
-function checkAccessImproved() {
-    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+// function checkAccessImproved() {
+//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
 
-    const userEmail = prompt('Inserisci il tuo indirizzo email');
+//     const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-    let grantAccess = 'false';
+//     let grantAccess = 'false';
 
-    for (let i = 0; i < addresses.length; i++) {
-        const email = addresses[i];
+//     for (let i = 0; i < addresses.length; i++) {
+//         const email = addresses[i];
 
-        if (userEmail.length > 5) {
+//         if (userEmail.length > 5) {
 
-            if (email === userEmail) {
-                grantAccess = 'true';
+//             if (email === userEmail) {
+//                 grantAccess = 'true';
 
-            }
+//             }
 
-        }
+//         }
 
-        if (grantAccess) {
-            console.log('Accesso consentito!');
-        } else {
-            console.log('Accesso negato!');
-        }
-    }
-    checkAccessImproved();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//         if (grantAccess) {
+//             console.log('Accesso consentito!');
+//         } else {
+//             console.log('Accesso negato!');
+//         }
+//     }
+//     checkAccessImproved();
